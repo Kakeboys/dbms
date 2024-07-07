@@ -1,0 +1,11 @@
+CREATE TABLE Employee (E_id INT PRIMARY KEY,E_name VARCHAR(100),Age INT,Salary DECIMAL(10, 2)); 
+DESC EMPLOYEE ;
+INSERT INTO Employee VALUES (103, 'Jim Brown', 'Analyst', 101, 55000, 5500); 
+INSERT INTO Employee VALUES (103, 'Jim Brown', 'Analyst', 101, 55000, 5500); 
+SELECT * FROM Employee;
+SELECT COUNT(E_name) FROM Employee; 
+SELECT COUNT(DISTINCT E_name) FROM Employee; 
+SELECT MAX(Age) FROM Employee; 
+SELECT MIN(Age) FROM Employee; 
+SELECT Salary FROM Employee ORDER BY Salary ASC; 
+SELECT Salary, COUNT(*) AS Number_of_Employees FROM Employee GROUP BY Salary ORDER BY Salary;
